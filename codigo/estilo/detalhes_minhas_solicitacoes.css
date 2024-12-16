@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #9fc4d8;
+}
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 5vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 0.5vh solid #9fc4d8;
+}
+
+#logo img {
+    height: 15vh;
+    margin-top: -2vh;
+    margin-bottom: -6vh;
+}
+
+nav a {
+    margin-left: 5vh;
+    margin-right: 12vh;
+    margin-top: 1vh;
+    text-decoration: none;
+    color: #577E94;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffb235;
+}
+
+#container {
+    background-color: #ffffff;
+    border-radius: 3.5vh;
+    padding: 2vh 3vh;
+    max-width: 150vh;
+    max-height: 68vh; 
+    margin: 10vh auto;
+    margin-top: 14vh;
+    text-align: center;
+    overflow-y: auto; 
+    border: 1vh solid #ffffff;
+}
+
+h1 {
+    color: #ffb235;
+    text-align: center;
+    font-size: 5vh;
+    margin-top: -1vh;
+    margin-bottom: 0vh;
+}
+
+.informacoes-adotante, .informacoes-animal {
+    width: 66vh; 
+    height: 30vh;
+    margin: 1vh;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1.5vh;
+    border-radius: 3.5vh;
+    background-color: #577E94;
+    overflow: auto;
+    border: 1vh solid #577E94;
+}
+
+h2 {
+    font-size: 2.7vh;
+    color: #ffffff;
+    margin-top: 0;
+    margin-top: -1vh;
+    margin-bottom: 1.5vh;
+    text-align: center;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5vh;
+}
+
+.informacoes-adotante p, .informacoes-animal p {
+    text-align: left;
+    margin: 0;
+    font-size: 1.7vh;
+    padding: 1vh;
+    background-color: #ffffff;
+    border-radius: 2.5vh;
+    color: #ffb235;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+strong{
+    font-weight: bold;
+}
+
+#nome {
+    width: 70%;
+}
+
+#data_nascimento {
+    width: 20%;
+}
+
+#email, #telefone, #cpf, #cep, #bairro, #complemento {
+    width: 45%;
+}
+
+#rua, #cidade {
+    width: 31.5%;
+}
+
+#numero, #estado {
+    width: 7.5%;
+}
+
+#nome_animal {
+    width: calc(61% - -1vh);
+}
+
+#idade {
+    width: calc(12% - -11vh);
+}
+
+#sexo, #castrado, #porte {
+    width: calc(12% - -11vh);
+}
+
+#descricao {
+    width: 100%;
+    height: 10vh;
+    border-radius: 1.5vh;
+    margin-top: 1vh;
+    font-size: 1.9vh;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.formulario {
+    width: 94%;
+    height: 20vh;
+    padding: 0vh 2vh;
+    margin: 2vh;
+    border-radius: 3vh;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    font-size: 2.7vh;
+    font-weight: normal;
+    color: #ffb235;
+    border: solid 1vh #577E94;
+    align-items: center;
+    text-align: left;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 62%;
+}
+
+#dt_solic {
+    font-size: 2.8vh;
+    font-weight: bold;
+    color: #664B25;
+    margin: 0 3vh;
+    text-align: left;
+    margin-top: -3vh
+}
+
+#situacao {
+    font-size: 4vh;
+    margin-top: 0vh;
+    font-weight: bold;
+    background-color: #ffb235;
+    color: #ffffff;
+    padding: 1vh 6vh;
+    border-radius: 12vh;
+    text-align: right;
+}
+
+.botoes-acoes {
+    display: flex;
+    justify-content: flex-end; 
+    margin: 2vh;
+    margin-top: -11vh;
+    align-items: center;
+    gap: 3vh; 
+    width: 30%; 
+    margin-left: auto;
+}
+
+.botoes-acoes #excluir, .botoes-acoes #voltar {
+    font-family: Poppins, sans-serif;
+    font-size: 3vh;
+    font-weight: bold;
+    background-color: #577E94;
+    color: #ffffff;
+    padding: 1vh 5vh;
+    border: none;
+    border-radius: 12vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+}
+
+.botoes-acoes #voltar {
+    background-color: #9fc4d8;
+}
+
+.botoes-acoes #excluir:hover, .botoes-acoes #voltar:hover {
+    background-color: #664B25;
+}
+
+#abrirDivAdotante, #abrirDivAnimal {
+    font-family: Poppins, sans-serif;
+    font-size: 2vh;
+    font-weight: bold;
+    background-color: #ffb235;
+    color: #ffffff;
+    padding: 0.5vh 2vh;
+    border: none;
+    border-radius: 12vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    margin: 0vh;
+}
+
+#abrirDivAdotante:hover, #abrirDivAnimal:hover {
+    background-color: #664B25;
+    color: #ffffff;
+}
+
+.abrir {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: auto;
+}
+
+.abrir-content {
+    border-radius: 3.5vh;
+    padding: 1vh 4vh;
+    width: 150vh;
+    height: 73vh;
+    margin: 10vh auto;
+    margin-top: 14vh;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 3.5vh;
+    background-color: #ffffff;
+    overflow: auto;
+    position: relative;
+}
+
+.abrir-content h2 {
+    font-size: 5vh;
+    color: #ffb235;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+}
+#abrir-contentA h2 {
+    margin-top: 3vh;
+    font-size: 5.5vh;
+}
+
+.abrir-content p {
+    text-align: left;
+    margin: 0.7vh;
+    font-size: 3vh;
+    padding: 2vh 3vh;
+    background-color: #577E94;
+    border-radius: 5.5vh;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#abrir-contentA p {
+    padding: 1.5vh 3vh;
+}
+
+.img-info-container {
+    display: flex;
+    align-items: flex-start; 
+    width: 100%;
+    margin-top: 5vh;
+}
+
+.img-info-container img {
+    background-color: #577E94;
+    padding: 1vh;
+    flex-shrink: 0; 
+    width: 50vh;
+    height: 45vh;
+    margin-right: 3.5vh;
+    border-radius: 2.5vh;
+    object-fit: cover; 
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.abrir-content #descricao {
+    font-size: 3vh;
+    height: 22vh;
+    max-height: 22vh;
+    overflow: auto;
+}
+
+.fechar {
+    position: absolute;
+    top: -1vh;
+    right: 4vh;
+    font-size: 7vh;
+    font-weight: bold;
+    color: #664B25;
+    cursor: pointer;
+}
+
+.fechar:hover {
+    color: #ffb235;
+}
+
+.aprovacaoContainer, .recusaConteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.avisoConteudo {
+    background-color: #577E94;
+    padding: 4vh 3vh;
+    border-radius: 2vh;
+    color: white;
+    width: 50vw; 
+    max-width: 600px; 
+    height: auto; 
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    overflow-y: auto;
+    margin: auto;
+    margin-top: 20vh;
+}
+
+.avisoConteudo h2 {
+    margin-bottom: 1.5vh;
+    font-size: 3vh;
+}
+
+.avisoConteudo p {
+    margin: 1vh 0;
+    font-size: 2.7vh;
+}
+
+form {
+    margin-top: 2vh;
+}
+
+button#fecharAprovacao, #fecharRecusa {
+    background-color: #ffb235;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+    padding: 1.5vh 2.5vh;
+    border-radius: 2vh;
+    font-size: 2.8vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#fecharAprovacao:hover, #fecharRecusa:hover {
+    background-color: #ffd591;
+    color: #664b25;
+}
+
+
+::-webkit-scrollbar {
+    width: 2vh; 
+}
+::-webkit-scrollbar-thumb {
+    background-color: #9FC4D8;
+    border-radius: 2vh; 
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+* {
+    scrollbar-width: thin; 
+    scrollbar-color: #9FC4D8 transparent; 
+}
+body {
+    -ms-overflow-style: none; 
+}
+  

@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #9fc4d8;
+}
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 5vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 0.5vh solid #9fc4d8;
+}
+
+#logo img {
+    height: 15vh;
+    margin-top: -2vh;
+    margin-bottom: -6vh;
+}
+
+nav a {
+    margin-left: 5vh;
+    margin-right: 12vh;
+    margin-top: 1vh;
+    text-decoration: none;
+    color: #577E94;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffb235;
+}
+
+#container {
+    display: flex;
+    padding: 1vh 0vh;
+    margin-top: 10vh;
+}
+
+
+#filtros {
+    border: 0.2vh solid #ffffff;
+    border-bottom: none;
+    width: 20%;
+    margin-top: 7vh;
+    background-color: rgba(87, 126, 148, 0.3);
+    display: flex;
+    flex-direction: column;
+    height: 95%; 
+    overflow-y: auto; 
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#filtros h3 {
+    display: inline-block;
+    font-size: 2.5vh;
+    font-weight: bold;
+    color: white;
+    margin-left: 1vh;
+    margin-bottom: 2vh;
+}
+
+#limpar {
+    margin-left: 15vh;
+    padding: 0;
+    font-size: 2vh;
+    font-weight: normal;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+#limpar:hover{
+    color: #664b25;
+}
+
+#filtros input {
+    padding: 1vh;
+    font-size: 2vh;
+    border: none;
+    border-radius: 5vh;
+    font-family: 'Poppins', sans-serif;
+    color: #ffb235;
+}
+
+#filtros input[type="checkbox"] {
+    width: 2vh;
+    height: 2vh;
+    appearance: none;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 1vh;
+    position: relative;
+}
+
+#filtros input[type="checkbox"]:checked {
+    background-color: #ffb235;
+    border: 1px solid #ffb235;
+}
+
+#filtros input[type="checkbox"]:checked::before {
+    content: '\2714';
+    color: #ffffff;
+    position: absolute;
+    top: -0.1vh;
+    left: 0.4vh;
+    font-size: 1.5vh;
+}
+
+.campos {
+    padding: 3vh 2vh;
+    border: 0.2vh solid #ffffff;
+}
+
+.campo-oculto {
+    display: none;
+    overflow-y: auto;
+}
+
+label {
+    font-weight: normal;
+    font-size: 2.2vh;
+    margin-top: 2vh;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 2vh;
+}
+
+.seta {
+    padding: 0 2vh;
+    cursor: pointer;
+    color: white;
+    font-size: 2.1vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seta::after {
+    content: '\25BC'; 
+    font-size: 1.5vh;
+    margin-right: 2vh;
+}
+
+.seta.aberta::after {
+    content: '\25B2'; 
+}
+
+.seta.aberta + .campos-content {
+    display: block;
+}
+
+#pesquisa_abrigo {
+    width: 35vh;
+}
+
+#aplicar {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    padding: 1vh 5vh; 
+    font-size: 2.5vh;
+    color: #ffffff;
+    border-radius: 5vh;
+    cursor: pointer;
+    margin-top: 5vh; 
+    margin-bottom: 5vh;
+    margin-left: 12vh;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#aplicar:hover {
+    color: #664b25; 
+    border-color: #664b25;
+}
+
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
+    margin-left: auto;
+}
+
+.mensagem-vazia {
+    color: #577E94;
+    font-size: 3vh;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.animal {
+    background-color: #fff;
+    border-radius: 1vh;
+    margin: 1.5vh;
+    width: calc(20% - 3.5vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.animal:hover {
+    transform: translateY(-1vh);
+    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.2);
+}
+
+.animal img {
+    width: 100%;
+    height: 27vh;
+    object-fit: cover;
+    margin-bottom: -0.5vh;
+}
+
+.info {
+    padding: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detalhes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.nome {
+    font-size: 3vh;
+    font-weight: bold;
+    color: #664b25;
+}
+
+.idade {
+    font-size: 2vh;
+    color: #664b25;
+}
+
+.sexo {
+    align-self: flex-end;
+    margin-top: -6vh;
+}
+
+.sexo img {
+    height: 4.2vh;
+    width: auto;
+}
+
+.acoes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+button {
+    background-color: #ffd591;
+    color: #664b25;
+    border: none;
+    padding: 0.9vh 3.7vh;
+    font-size: 2vh;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5vh;
+    margin-top: 3vh;
+    font-family: 'Poppins', sans-serif;
+    align-self: center;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffb235;
+    color: #ffffff;
+}
+
+.btn-adotados, .btn-voltar {
+    position: fixed;
+    bottom: 2vh;
+    right: 2vh; 
+    text-align: center;
+    padding: 1vh 2vh;
+    z-index: 1000; 
+}
+
+.btn-adotados a {
+    display: inline-block;
+    padding: 1vh 2vh;
+    background-color: #ffb235;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5vh;
+    font-size: 2.5vh;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+}
+
+.btn-voltar a  {
+    display: inline-block;
+    padding: 1vh 4vh;
+    background-color: #ffb235;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5vh;
+    font-size: 2.5vh;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-adotados a:hover, .btn-voltar a:hover {
+    background-color: #664b25;
+    color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    width: 2vh; 
+}
+::-webkit-scrollbar-thumb {
+    background-color: #9FC4D8;
+    border-radius: 2vh; 
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+* {
+    scrollbar-width: thin; 
+    scrollbar-color: #9FC4D8 transparent; 
+}
+body {
+    -ms-overflow-style: none; 
+}
+  
+  

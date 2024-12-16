@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #9fc4d8;
+}
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 5vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 0.5vh solid #9fc4d8;
+}
+
+#logo img {
+    height: 15vh;
+    margin-top: -2vh;
+    margin-bottom: -6vh;
+}
+
+nav a {
+    margin-left: 5vh;
+    margin-right: 12vh;
+    margin-top: 1vh;
+    text-decoration: none;
+    color: #577E94;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffb235;
+}
+
+#container {
+    background-color: #ffffff;
+    border-radius: 3.5vh;
+    padding: 3vh 3vh;
+    max-width: 160vh;
+    height: 70vh;
+    margin: 10vh auto;
+    text-align: center;
+    margin-top: 14vh;
+}
+
+h1 {
+    color: #ffb235;
+    text-align: left;
+    font-size: 5vh;
+    margin-top: 0;
+    margin-bottom: 1.5vh;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow-y: auto;
+    display: block;
+    max-height: 60vh; 
+}
+
+table thead {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 10;
+}
+
+table thead th {
+    color: #577E94;
+    font-size: 3vh;
+    font-weight: bold;
+    padding: 1vh 4vh;
+}
+
+table tbody td {
+    color: #664B25;
+    padding: 1.5vh 5vh;
+    font-size: 2.5vh;
+}
+
+table tbody tr:hover {
+    font-weight: bold;
+}
+
+.usuario {
+    width: 35%;
+    text-align: left; 
+}
+
+.animal {
+    width: 25%;
+    text-align: left;
+}
+
+.data {
+    width: 25%;
+    text-align: center; 
+}
+
+.abrir {
+    width: 15%;
+    text-align: right;
+}
+
+#abrir {
+    background-color: #ffb235;
+    color: #fff;
+    border: none;
+    padding: 0.7vh 4vh;
+    font-size: 2.5vh;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5vh;
+    margin-top: 3vh;
+    font-family: 'Poppins', sans-serif;
+    align-self: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#abrir:hover {
+    background-color: #664B25;
+}
+
+::-webkit-scrollbar {
+    width: 2vh; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #9FC4D8;
+    border-radius: 2vh; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  * {
+    scrollbar-width: thin; 
+    scrollbar-color: #9FC4D8 transparent; 
+  }
+  body {
+    -ms-overflow-style: none; 
+  }
+  

@@ -1,0 +1,153 @@
+.cadastroContainer, .opcaoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.opcaoConteudo, .cadastroConteudo {
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    background-color: #664b25;
+    padding: 2vh, 1vh;
+    border-radius: 2vh;
+    text-align: center;
+    color: white;
+    width: 20vw;
+    height: 45vh;
+}
+
+.cadastroConteudoA {
+    margin-bottom: 1vh;
+    background-color: #664b25;
+    padding: 2vh, 1vh;
+    border-radius: 2vh;
+    text-align: center;
+    color: white;
+    width: 20vw;
+    height: 45vh;
+}
+
+.opcaoTitulo, .cadastroTitulo{
+    font-size: 3vh;
+    font-weight: bold;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    color: #ffffff;
+    text-shadow: 
+    -0.8vh -0.8vh 0 transparent,
+    -0.8vh 0.8vh 0 transparent,  
+    0.8vh -0.8vh 0 transparent,
+    0.8vh 0.8vh 0 transparent;
+}
+
+.cadastroTitulo {
+    font-size: 2.3vh;
+}
+
+.cadastroTituloA {
+    font-size: 2.3vh;
+    font-weight: bold;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    color: #ffffff;
+    text-shadow: 
+    -0.8vh -0.8vh 0 transparent,
+    -0.8vh 0.8vh 0 transparent,  
+    0.8vh -0.8vh 0 transparent,
+    0.8vh 0.8vh 0 transparent;
+}
+
+#login, #cadastroUsuario {
+    display: inline-block;
+    padding: 1vh 7vh;
+    font-size: 4vh;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    background-color: #ffb235;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10vh;
+    margin-bottom: 2vh;
+}
+
+#cadastroAbrigo {
+    display: inline-block;
+    margin: 1vh 0;
+    padding: 1.8vh 3vh;
+    font-size: 3.5vh;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    background-color: #ffb235;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10vh;
+}
+
+#cadastroCao {
+    display: inline-block;
+    padding: 0.85vh 10vh;
+    font-size: 4vh;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    background-color: #ffb235;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10vh;
+    margin-bottom: 2vh;
+    margin-top: 0.5vh;
+}
+
+#cadastroGato {
+    display: inline-block;
+    padding: 1vh 9vh;
+    font-size: 4vh;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    background-color: #ffb235;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10vh;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+}
+
+
+#cadastroAbrigo:hover, #cadastroUsuario:hover, #login:hover {
+    background-color: #ffd591;
+    color: #664b25;
+}
+
+#cadastroCao:hover, #cadastroGato:hover {
+    background-color: #ffd591;
+    color: #664b25;
+}
+
+.opcaoFechar, .cadastroFechar, .cadastroFecharA {
+    display: block;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+    font-size: 5vh;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.opcaoFechar:hover, .cadastroFechar:hover, .cadastroFecharA:hover  {
+    color: #ffb235;
+}
+

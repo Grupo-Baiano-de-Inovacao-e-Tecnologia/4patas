@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #9FC4D8;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 5vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 0.5vh solid #9fc4d8;
+}
+
+#logo img {
+  height: 15vh;
+  margin-top: -2vh;
+  margin-bottom: -6vh;
+}
+
+nav a {
+  margin-left: 5vh;
+  margin-right: 12vh;
+  margin-top: 1vh;
+  text-decoration: none;
+  color: #577E94;
+  font-size: 2.5vh;
+  font-weight: bold;
+
+}
+
+nav a:hover {
+  color: #ffb235;
+
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 4vh;
+  padding: 3vh 5vh;
+  max-width: 150vh;
+  max-height: 70vh;
+  margin: 14vh auto;
+  text-align: center;
+}
+
+h1 {
+  color: #664B25;
+  text-align: left;
+  font-size: 4.9vh;
+  margin-top: -2vh;
+  margin-left: 2.5vh;
+}
+h1 img {
+  margin-left: -2vh; 
+  height: 6vh; 
+  margin-bottom: -1vh;
+}
+
+.container-azul {
+  background-color: #577E94;
+  padding: 1vh 4.5vh;
+  border-radius: 4vh;
+  overflow-y: scroll; 
+  max-height: 54vh; 
+  color: #ffffff;
+  margin-top: -2vh;
+  border: 1vh solid #577E94;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 3.5vh;
+  text-align: center; 
+  margin-top: 0vh;
+}
+
+p {
+  margin-top: -3.5vh;
+  font-size: 2.5vh;
+}
+
+br{
+  margin: 2.3vh;
+}
+
+.grupo_formulario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2vh;
+}
+
+input[type="text"], input[type="date"], input[type="email"], select, textarea {
+  font-size: 2.5vh;
+  font-weight: bold;
+  padding: 1.5vh 2.9vh;
+  color: #664B25;
+  border: none;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5vh;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #FFB235;
+  opacity: 1;
+  font-family:Poppins, sans-serif;
+}
+
+#nome {
+  width: 70%;
+}
+
+#data_nascimento {
+  width: 20%;
+}
+
+#email, #telefone, #bairro, #complemento, #cpf, #cep {
+  width: 45%;
+}
+
+#rua, #cidade {
+  width: 31.5%;
+}
+
+#numero, #estado {
+  width: 7.5%;
+}
+
+#nome_animal{
+  width: calc(61% - -1vh);
+}
+
+#idade{
+  width: calc(20% - -11vh);
+}
+
+#sexo, #castrado, #porte {
+  width: calc(20% - -11vh);
+}
+
+#descricao {
+  width: 95%;
+  height: 15vh;
+  border-radius: 2.5vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  font-size: 2.5vh;
+  font-weight: normal;
+}
+
+#formulario {
+  width: 95%;
+  height: 25vh;
+  border-radius: 2.5vh;
+  margin-bottom: 4vh;
+  font-size: 2.5vh;
+  font-weight: normal;
+}
+
+.grupo_formulario select {
+  width: 100%;
+  font-size: 2.5vh;
+}
+
+.formulario {
+  flex-wrap: wrap; 
+  gap: 2vh; 
+}
+
+button {
+  margin-top: 1.25vh;
+  font-family: Poppins, sans-serif;
+  font-size: 3.5vh;
+  font-weight: bold;
+  background-color: #ffb235;
+  color: #ffffff;
+  padding: 1.5vh 8vh;
+  margin-bottom: 2vh;
+  border: none;
+  border-radius: 12vh;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+}
+
+button:hover {
+  background-color: #664B25;
+}
+
+#erro {
+  font-weight: 0;
+  background-color: #ffd591;
+  color: #664B25;
+  padding: 1vh 4vh;
+  border-radius: 4vh;
+  position: fixed;
+  top: 10vh;
+  left: 50%;
+  font-size: 2.3vh;
+  transform: translateX(-50%);
+  z-index: 1000;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.5s;
+}
+
+#erro p {
+  margin: 0;
+  font-size: 2.3vh;
+  color: #664B25;
+  font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  width: 2vh; 
+}
+::-webkit-scrollbar-thumb {
+  background-color: #9FC4D8;
+  border-radius: 2vh; 
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+* {
+  scrollbar-width: thin; 
+  scrollbar-color: #9FC4D8 transparent; 
+}
+body {
+  -ms-overflow-style: none; 
+}

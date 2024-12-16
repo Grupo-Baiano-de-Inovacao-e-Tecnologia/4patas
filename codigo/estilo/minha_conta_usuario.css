@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #9FC4D8;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 5vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 0.5vh solid #9fc4d8;
+}
+
+#logo img {
+  height: 15vh;
+  margin-top: -2vh;
+  margin-bottom: -6vh;
+}
+
+nav a {
+  margin-left: 5vh;
+  margin-right: 12vh;
+  margin-top: 1vh;
+  text-decoration: none;
+  color: #577E94;
+  font-size: 2.5vh;
+  font-weight: bold;
+
+}
+
+nav a:hover {
+  color: #ffb235;
+
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 4vh;
+  padding: 3vh;
+  width: 150vh;
+  max-height: 62vh;
+  margin: 15vh auto;
+  text-align: center;
+  overflow: auto;
+  border: solid 1vh #ffffff;
+}
+
+h1 {
+  color: #ffb235;
+  text-align: center;
+  font-size: 5vh;
+  margin-top: -1.5vh;
+  margin-bottom: 1.5vh;
+}
+
+input[type="text"], input[type="date"], input[type="email"], input[type="password"]{
+  font-size: 2.5vh;
+  font-weight: bold;
+  padding: 1.5vh 3vh;
+  color: #ffffff;
+  border: none;
+  background-color: #577E94;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5vh;
+  margin: 1vh;
+  margin-bottom: 1.5vh;
+}
+
+input::placeholder {
+  color: #ffffff;
+  opacity: 1;
+  font-family:Poppins, sans-serif;
+}
+
+#nome {
+  width: 66%;
+}
+
+#data_nascimento {
+  width: 20%;
+}
+
+#email, #telefone, #bairro, #complemento, #cpf, #cep, #senha, #confirmar_senha {
+  width: 43%;
+}
+
+#rua, #cidade {
+  width: 28%;
+}
+
+#numero, #estado {
+  width: 9%;
+}
+
+.botoes {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3vh;
+  gap: 3vh;
+}
+
+button, #voltar {
+  font-family: Poppins, sans-serif;
+  font-size: 3vh;
+  font-weight: bold;
+  background-color: #ffb235;
+  color: #ffffff;
+  padding: 1.5vh 7vh;
+  margin-right: 3vh;
+  margin-left: -2vh;
+  border: none;
+  border-radius: 12vh;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+#voltar{
+  background-color: #9fc4d8;
+}
+button:hover, #voltar:hover {
+  background-color: #664b25;
+}
+
+.mensagens {
+  font-weight: normal;
+  background-color: #ffd591;
+  color: #664B25;
+  font-weight: bold;
+  padding: 1vh 3vh;
+  border-radius: 4vh;
+  position: fixed;
+  top: 10vh;
+  left: 50%;
+  font-size: 2.3vh;
+  transform: translateX(-50%);
+  z-index: 1000;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.5s;
+}
+
+.mensagens p {
+  margin: 0;
+  font-size: 2.3vh;
+  color: #664B25;
+  font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  width: 2vh; 
+}
+::-webkit-scrollbar-thumb {
+  background-color: #9FC4D8;
+  border-radius: 2vh; 
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+* {
+  scrollbar-width: thin; 
+  scrollbar-color: #9FC4D8 transparent; 
+}
+body {
+  -ms-overflow-style: none; 
+}

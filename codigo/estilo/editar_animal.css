@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #9fc4d8;
+}
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 5vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 0.5vh solid #9fc4d8;
+}
+
+#logo img {
+    height: 15vh;
+    margin-top: -2vh;
+    margin-bottom: -6vh;
+}
+
+nav a {
+    margin-left: 5vh;
+    margin-right: 12vh;
+    margin-top: 1vh;
+    text-decoration: none;
+    color: #577E94;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffb235;
+}
+
+#container {
+    background-color: #ffffff;
+    border-radius: 3.5vh;
+    padding: 3vh 5vh;
+    max-width: 150vh;
+    margin: 10vh auto;
+    text-align: center;
+    margin-top: 14vh;
+}
+
+h1 {
+    color: #ffb235;
+    text-align: center;
+    font-size: 5vh;
+    margin-top: -2vh;
+}
+
+.formulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upload-container {
+    width: 30vh;
+    height: 30vh;
+    margin-bottom: -14vh;
+    margin-top: -5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -1vh;
+    margin-right: 2vh;
+}
+
+.upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; 
+    width: 25vh;
+    height: 30vh;
+    background-color: #577E94;
+    border-radius: 1vh;
+    cursor: pointer;
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.upload-placeholder {
+    width: 30vh;
+    height: 30vh;
+    margin-bottom: -14vh;
+    margin-top: -5vh;
+    visibility: hidden;
+}
+
+.upload-label img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.upload-label p {
+    font-size: 2.4vh;
+    font-weight: normal;
+    z-index: 1; 
+    background-color: rgba(87, 126, 148, 0.9); 
+    padding: 0.5vh;
+    width: 100%;
+    margin: 0; 
+    position: absolute; 
+    bottom: 0;
+}
+
+.upload-label p:hover {
+    color: #9fc4d8;
+}
+
+.grupo_formulario {
+    display: flex;
+    width: 130vh;
+}
+
+.grupo_formulario select {
+    width: 38vh;
+    font-size: 2.5vh;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+input[type="text"], input[type="date"], select, textarea {
+    font-size: 2.5vh;
+    font-weight: bold;
+    padding: 1.5vh 3vh;
+    color: #ffffff;
+    border: 0.2vh solid #577E94;
+    background-color: #577E94;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5vh;
+}
+
+input[type="text"], select {
+    width: calc(7/7 * (61.5% - 1vh));
+    margin-right: 1vh;
+}
+
+input[type="date"] {
+    margin-left: 2vh;
+    width: calc(3.7/7 * (50% - 1vh));
+}
+
+input::placeholder, textarea::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+select {
+    appearance: none;
+    background: #577E94 url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' width='auto' height='5' viewBox='0 0 10 5'><path fill='%23ffffff' d='M0 0l5 5 5-5z'/></svg>") no-repeat right 3vh center;
+    margin-left: 2vh;
+}
+
+select option {
+    font-weight: normal;
+    font-family: "Poppins", sans-serif;
+}
+
+textarea {
+    margin-top: 5vh;
+    font-weight: normal;
+    width: 150vh;
+    height: 20vh;
+    border-radius: 2.5vh;
+}
+
+.botoes {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3vh;
+    gap: 3vh;
+}
+  
+button, #voltar {
+    font-family: Poppins, sans-serif;
+    font-size: 3vh;
+    font-weight: bold;
+    background-color: #ffb235;
+    color: #ffffff;
+    padding: 1.5vh 7vh;
+    margin-right: 3vh;
+    margin-left: -2vh;
+    border: none;
+    border-radius: 12vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-decoration: none;
+}
+  
+#voltar {
+    background-color: #9fc4d8;
+}
+
+button:hover, #voltar:hover {
+    background-color: #664B25;
+}
+  
+#mensagens {
+    background-color: #ffd591;
+    color: #664B25;
+    font-weight: bold;
+    padding: 0.5vh 2vh;
+    border-radius: 2vh;
+    position: fixed;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    text-align: center;
+    font-size: 2vh;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.5s;
+}
+  
+#mensagens p {
+    margin: 0;
+    font-size: 2.3vh;
+    color: #664B25;
+    font-weight: bold;
+}

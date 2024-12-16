@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("imagem/fundo_inicio.png");
+    background-color: #9fc4d8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 4vh;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+#logo {
+    max-width: 20vh;
+    height: auto;
+    position: absolute;
+    left: 7vh;
+    top: 2vh;
+}
+
+nav {
+    background-image: url("imagem/fundo_nav.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 11vh 10.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    position: relative;
+    top: -8vh;
+}
+
+nav a {
+    font-size: 3vh;
+    font-weight: bold;
+    margin: 0 11vh;
+    color: #664b25;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+main {
+    position: absolute;
+    left: 6%;
+    top: 53%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Chewy', cursive;
+    color: #ffffff;
+    text-align: center;
+    font-size: 27vh;
+    text-shadow: 
+        -0.8vh -0.8vh 0 #664b25,
+        -0.8vh 0.8vh 0 #664b25,  
+        0.8vh -0.8vh 0 #664b25,  
+        0.8vh 0.8vh 0 #664b25;  
+    margin: 0;
+}
+
+p {
+    font-size: 3vh;
+    font-weight: bold;
+    color: #664b25;
+    text-shadow: 
+        -0.3vh -0.3vh 0 #ffffff,  
+        0.3vh -0.3vh 0 #ffffff,
+        -0.3vh 0.3vh 0 #ffffff,    
+        0.3vh 0.3vh 0 #ffffff;
+    margin: 2vh 0;
+}
+
+button {
+    margin-top: 5vh;
+    font-family: poppins, sans-serif;
+    font-size: 4vh;
+    font-weight: bold;
+    background-color: #ffb235;
+    color: #ffffff;
+    padding: 2vh 7vh;
+    border: none;
+    border-radius: 11.7vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffd591;
+    color: #664b25;
+}

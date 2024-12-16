@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("imagem/fundo_login.png");
+    background-color: #9fc4d8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 4vh;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+#logo {
+    max-width: 30vh;
+    height: auto;
+    position: absolute;
+    left: 4vh;
+    top: 1vh;
+}
+
+nav {
+    position: absolute;
+    right: 11vh;
+    top: 4vh;
+    display: flex;
+    gap: 2vh;
+}
+
+nav a {
+    background-color: #ffb235;
+    padding: 0.6vh 3vh;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5vh;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 3vh;
+}
+
+nav a:hover {
+    background-color: #ffd591;
+}
+
+#container {
+    background-color: #577e94;
+    border-radius: 3.5vh;
+    padding: 8vh 6vh;
+    width: 40%;
+    max-width: 50vh;
+    margin: 10vh auto;
+    margin-top: 16vh;
+    text-align: center;
+}
+
+#icone {
+    background-image: url("imagem/icone_login.png");
+    position: absolute;
+    top: 7vh;
+    left: 48%;
+    transform: translateX(-50%);
+    width: 30vh;
+    height: 22vh;
+    background-size: cover;
+    z-index: 1;
+}
+
+h2 {
+    color: white;
+    margin-top: 4.5vh;
+    font-size: 4vh;
+}
+
+p {
+    font-size: 1.95vh;
+    margin-bottom: 4.5vh;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: -2.5vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 92%;
+    padding: 2vh;
+    margin-bottom: 4vh;
+    border: none;
+    border-radius: 10vh;
+    background-color: white;
+    color: #664b25;
+    font-size: 2.2vh;
+    text-align: left;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+input::placeholder {
+    color: #ffb235;
+    opacity: 1;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+button {
+    margin-top: 4vh;
+    font-family: Poppins, sans-serif;
+    font-size: 3.5vh;
+    font-weight: bold;
+    background-color: #ffb235;
+    color: #ffffff;
+    padding: 1vh 5vh;
+    border: none;
+    border-radius: 12vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #664b25;
+}
+
+#erro {
+    background-color: #ffd591;
+    color: #664B25;
+    font-weight: bold;
+    padding: 1vh 4vh;
+    border-radius: 4vh;
+    position: fixed;
+    top: 3vh;
+    left: 50%;
+    font-size: 2.3vh;
+    transform: translateX(-50%);
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.5s;
+}
+
+#erro p {
+    margin: 0;
+    font-size: 2.3vh;
+    color: #664B25;
+    font-weight: bold;
+}
+  
+#abrirDivCadastro{
+    font-size: 1.95vh;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    padding: 0.5vh 2vh;
+}
+
+#abrirDivCadastro:hover {
+    color: #664b25;
+    background-color: #ffffff;
+    border-radius: 7vh;
+}
